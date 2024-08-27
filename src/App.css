@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.transition-width {
+    transition: width 0.5s;
+  }
+
+
+.landing{
+  background-image: url(./assets/images/code.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.landing-overlay{
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#nav span::after{
+    content: '';
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.bg-image {
+    background-image: url(./assets/images/hero-bg.jpg);
+    height: 100vh; 
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.overlay {
+    background-color: rgba(255, 255, 255, 0.3);
+    height: 100%;
+    width: 100%;
+}
+
+/* App.css */
+.hero-container {
+    position: relative;
+  }
+  
+  .hero-container::before {
+    content: "";
+    background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background-clip: border-box;
+  }
+
+  /* Add this to a CSS file or in your global styles */
+@keyframes fadeInStagger {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.staggered-item {
+  opacity: 0;
+  animation: fadeInStagger 1s ease-in-out forwards;
+}
+
+/* Adjust delay as necessary */
+.staggered-item:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.staggered-item:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.staggered-item:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.staggered-item:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.staggered-item:nth-child(5) {
+  animation-delay: 0.5s;
+}
+.staggered-item:nth-child(6) {
+  animation-delay: 0.6s;
+}
+.staggered-item:nth-child(7) {
+  animation-delay: 0.7s;
+}
